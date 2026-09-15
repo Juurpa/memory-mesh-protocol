@@ -1,0 +1,16 @@
+﻿__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+build/
+dist/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

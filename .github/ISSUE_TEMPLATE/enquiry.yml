@@ -1,0 +1,41 @@
+﻿name: Evaluation & Pilot Enquiry
+description: Inquire about the closed B2B pilot, architecture evaluation, or licensing terms.
+title: "[Enquiry]: "
+labels: ["enquiry", "pilot"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in the **Memory Mesh Protocol (MMP)** and **Memory Mesh Bridge (MMB)**. 
+        Please provide non-sensitive context regarding your target agent harness and deployment scope.
+  - type: input
+    id: organization
+    attributes:
+      label: Organization or Team
+      description: Name of your enterprise, research lab, or engineering group.
+      placeholder: e.g., Enterprise DevOps / AI Platform Engineering
+    validations:
+      required: true
+  - type: input
+    id: harness
+    attributes:
+      label: Target Agent Harness
+      description: What framework or agent orchestrator are you evaluating?
+      placeholder: e.g., Claude Code, custom MCP executor, LangGraph
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Intended Deployment Scope
+      description: Approximate corpus size, languages, and primary use cases.
+      placeholder: e.g., Polyglot codebases (TypeScript/Python), continuous CI/CD refactoring, compliance auditing.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgment
+      options:
+        - label: I understand this repository contains architectural specifications and previews, and reference implementation binaries are provided under private evaluation agreements.
+          required: true
